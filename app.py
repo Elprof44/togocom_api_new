@@ -91,7 +91,8 @@ def gethistoriquebypdv(pdv_id):
     cursor.execute("SELECT * FROM historique WHERE pdv_uuid = ?", (pdv_id,))
     return [dict(row) for row in cursor.fetchall()]
 
-# login systheme call
+
+    #    login systheme call
 
 
 @app.route('/login/<number>/<password>')
